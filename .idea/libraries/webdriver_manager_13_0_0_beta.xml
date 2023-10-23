@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="webdriver-manager-13.0.0-beta">
+    <CLASSES>
+      <root url="jar://D:/Softwares/Testing/webdriver-manager-13.0.0-beta.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="jar://D:/Softwares/Testing/webdriver-manager-13.0.0-beta.jar!/" recursive="false" />
+  </library>
+</component>
