@@ -21,7 +21,7 @@ public class HealeniumTest extends BaseTest {
 
             @Test
     public  void firstTest() {
-            driver.findElement(By.id("firstName")).sendKeys("FirstName");
+            driver.findElement(By.id("firstName1")).sendKeys("FirstName");
                 driver.findElement(By.id("lastName")).sendKeys("LastName");
                 driver.findElement(By.id("username")).sendKeys("Username");
                 driver.findElement(By.id("email")).sendKeys("email@gmaail.com");

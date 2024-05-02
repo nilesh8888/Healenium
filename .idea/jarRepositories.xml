@@ -2,6 +2,11 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="STAF_repo" />
+      <option name="name" value="Contains STAF Utilities" />
+      <option name="url" value="https://deploy-aws.internal.vodafone.com/nexus/repository/TESTAUTO2_MAVEN" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
@@ -15,6 +20,21 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="amdocs_repo" />
+      <option name="name" value="Contains Amdocs Repos" />
+      <option name="url" value="https://deployvip.internal.vodafone.com:8080/nexus/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="public_repo" />
+      <option name="name" value="Nexus as proxy for all Maven Repos" />
+      <option name="url" value="https://deployvip.internal.vodafone.com:8080/nexus/repository/MAVEN-PUBLIC_group" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="TESTAUTO_SOLSTICE_MAVEN2" />
+      <option name="name" value="TESTAUTO_SOLSTICE_MAVEN2" />
+      <option name="url" value="https://deployvip.internal.vodafone.com:8080/nexus/repository/TESTAUTO_SOLSTICE_MAVEN2" />
     </remote-repository>
   </component>
 </project>

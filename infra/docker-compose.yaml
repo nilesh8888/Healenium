@@ -14,7 +14,7 @@ services:
       - POSTGRES_USER=healenium_user
       - POSTGRES_PASSWORD=YDk2nmNs4s9aCP6K
     networks:
-      - healenium
+      - healeniumnet
 
   healenium:
     image: healenium/hlm-backend:3.2.2
@@ -30,13 +30,31 @@ services:
       - SPRING_POSTGRES_PASSWORD=YDk2nmNs4s9aCP6K
       - SPRING_POSTGRES_URL=jdbc:postgresql://db:5432/healenium?currentSchema=healenium
     networks:
-      - healenium
+      - healeniumnet
 
   selector-imitator:
     image: healenium/hlm-selector-imitator:1
     restart: on-failure
     ports:
       - "8000:8000"
+    networks:
+      - healeniumnet
+
+  pgadmin:
+    image: dpage/pgadmin4:4.23
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_LISTEN_PORT: 32
+    ports:
+      - 15432:80
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    networks:
+      - healeniumnet
+
+volumes:
+  pgadmin:
 
 networks:
-  healenium:
+  healeniumnet:
