@@ -1,6 +1,6 @@
 name: PR Check
 
-# 👇 This triggers the workflow when a pull request is opened, synchronized (updated), or reopened
+# 👇 This th triggers the workflow when a pull request is opened, synchronized (updated), or reopened
 on:
   pull_request:
     types: [opened, synchronize, reopened]
